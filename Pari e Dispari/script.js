@@ -9,12 +9,33 @@ let playerGuess = parseInt(prompt('Inserisci "0" se preferisci pari o "1" se pre
 let playerNumber = parseInt(prompt('Inserisci un numero da 1 a 5'));
 console.log(playerGuess);
 console.log(playerNumber);
-let aiNumber =  Math.floor(Math.random() * (5 - 1) ) + 1;
+// let aiNumber =  Math.floor(Math.random() * (5 - 1) ) + 1;
+// console.log(aiNumber);
+// let sum = playerNumber + aiNumber;
+// console.log(sum);
+
+// if (playerGuess == (sum % 2) ) {
+//     console.log('HAI VINTO');
+//     alert('Complimenti hai battuto il computer');
+// } else {
+//     console.log('Hai perso');
+//     alert('Hai perso, peccato');
+// }
+
+function randomNumber () {
+    return Math.floor(Math.random() * (5 - 1) ) + 1;
+}
+
+function oddOrEven () {
+    if ((sum % 2) == 0) {
+        return 0;
+    } else {1}
+}
+
+let aiNumber = randomNumber();
 console.log(aiNumber);
 let sum = playerNumber + aiNumber;
-console.log(sum);
-
-if (playerGuess == (sum % 2) ) {
+if (playerGuess == oddOrEven()) {
     console.log('HAI VINTO');
     alert('Complimenti hai battuto il computer');
 } else {
